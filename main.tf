@@ -1,15 +1,11 @@
 provider "aws" {
-  access_key = var.aws_acess_key_id
-  secret_key = var.aws_secret_access_key
-  region = var.aws_region
+  access_key = var.AWS_ACCESS_KEY_ID
+  secret_key = var.AWS_SECRET_ACCESS_KEY
+  region = var.region
 }
 
-# -----------------------------------
-# VPCの作成
-# -----------------------------------
 resource "aws_vpc" "test-vpc" {
-  cidr_block = var.aws_vpc_cidr
-  tags = {
+	@@ -15,3 +15,36 @@ resource "aws_vpc" "test-vpc" {
     Name = "test-vpc"
   }
 }
