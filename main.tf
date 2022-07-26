@@ -12,8 +12,7 @@ terraform {
 provider "aws" {
   profile = "default"
   region  = "ap-northeast-1"
-  access_key = "AKIAJSC6CSBZ347SLUZQ"
-  secret_key = "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"
+
 
 
   # 作成する全リソースに自動的に付与するタグ設定
