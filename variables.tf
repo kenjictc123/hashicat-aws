@@ -1,4 +1,5 @@
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
-variable "aws_region" {}
-variable "aws_vpc_cidr" {}
+variable "AWS_ACCESS_KEY_ID" {}
+variable "AWS_SECRET_ACCESS_KEY" {}
+variable "AWS_REGION" {}
+variable "AWS_VPC_CIDR" {}
+variable "PREFIX" {}
