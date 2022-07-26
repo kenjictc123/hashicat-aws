@@ -1,7 +1,7 @@
 variable "AWS_ACCESS_KEY_ID" {}
 variable "AWS_SECRET_ACCESS_KEY" {}
 variable "AWS_REGION" {}
-variable "aws_vpc_cidr" {}
+variable "AWS_VPC_CIDR" {}
 variable "prefix" {}
 
 provider "aws" {
@@ -11,7 +11,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "test-vpc" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = var.AWS_VPC_CIDR
   tags = {
     Name = "test-vpc"
   }
