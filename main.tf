@@ -8,7 +8,8 @@ terraform {
 }
 
 provider "aws" {
-  region  = var.region
+  profile = "default"
+  region  = "us-west-1"
 }
 
 resource "aws_vpc" "hashicat" {
