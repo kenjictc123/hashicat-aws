@@ -5,7 +5,8 @@ provider "aws" {
 }
 
 resource "aws_vpc" "test-vpc" {
-	@@ -15,3 +15,36 @@ resource "aws_vpc" "test-vpc" {
+  cidr_block = "10.0.0.0/16"
+  tags = {
     Name = "test-vpc"
   }
 }
