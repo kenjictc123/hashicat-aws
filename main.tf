@@ -1,6 +1,3 @@
-variable "AWS_ACCESS_KEY_ID" {AKIAJSC6CSBZ347SLUZQ}
-variable "AWS_SECRET_ACCESS_KEY" {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}
-
 terraform {
   # 使用するAWSプロバイダーのバージョン指定（結構更新が速い）
   required_providers {
