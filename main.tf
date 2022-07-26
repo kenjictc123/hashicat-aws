@@ -1,7 +1,8 @@
-variable aws_access_key_id {}
-variable aws_secret_access_key {}
-variable aws_region {}
-variable aws_vpc_cidr {}
+variable "aws_access_key_id" {}
+variable "aws_secret_access_key" {}
+variable "aws_region" {}
+variable "aws_vpc_cidr" {}
+variable "prefix" {}
 
 provider "aws" {
   access_key = var.AWS_ACCESS_KEY_ID
