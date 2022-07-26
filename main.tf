@@ -1,7 +1,3 @@
-variable "AWS_ACCESS_KEY_ID" {}
-variable "AWS_SECRET_ACCESS_KEY" {}
-
-
 terraform {
   # 使用するAWSプロバイダーのバージョン指定（結構更新が速い）
   required_providers {
