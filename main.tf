@@ -1,7 +1,12 @@
+variable aws_access_key_id {}
+variable aws_secret_access_key {}
+variable aws_region {}
+variable aws_vpc_cidr {}
+
 provider "aws" {
   access_key = var.AWS_ACCESS_KEY_ID
   secret_key = var.AWS_SECRET_ACCESS_KEY
-  region = var.region
+  region = var.aws_region
 }
 
 resource "aws_vpc" "test-vpc" {
