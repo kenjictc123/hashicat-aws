@@ -7,3 +7,7 @@ terraform {
     }
   }
 }
+
+data "aws_vpc" "example"{
+  id = "vpc-6ab1320e"
+}
